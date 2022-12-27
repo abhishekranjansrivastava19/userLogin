@@ -1,0 +1,47 @@
+<div class="container">
+    <form action="/login">
+      <div class="row">
+        <h2 style="text-align:center">Login with Social Media or Manually</h2>
+        <div class="vl">
+          <span class="vl-innertext"></span>
+        </div>
+  
+        <div class="col">
+          <a href="https://connect.facebook.net/en_US/sdk.js" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+          </a>
+          <a href="#" class="twitter btn">
+            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+          </a>
+          <a href="https://gmail.googleapis.com" class="google btn">
+            <i class="fa fa-google fa-fw"></i> Login with Google+
+          </a>
+        </div>
+        <div class="container">
+          <div class="row-justify-content-centre">
+              <div class="col-md-7">
+                  <div class="card shadow-lg p-5 mt-5 mb-5">
+                      <h1>Welcome Here To Login</h1><hr>
+                      <div class="alert alert-success" role="alert">
+                          welcome back login here! 
+                        </div>
+                      <form [formGroup]="form" class="text-left">
+                          <div class="form-group">
+                              <label>Email</label>
+                              <input type="email" class="form-control" placeholder="email" formControlName="email">
+                              <label>Password</label>
+                              <input type="password" class="form-control" placeholder="******" formControlName="password" >
+                          </div>
+                          <button class="btn btn-outline-success btn-block mt-5" (click)="getUser()">login</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+       
+      </div>
+    </form>
+  </div>
+  
+  

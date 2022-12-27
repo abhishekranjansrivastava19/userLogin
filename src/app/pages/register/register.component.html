@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row-justify-content-centre">
+        <div class="col-md-7">
+            <div class="card shadow-lg p-5 mt-5 mb-5">
+                <h1>Welcome Here To Register...</h1><hr>
+                <div class="alert alert-success" role="alert">
+                    Account has been created! <a href="/login">login here @</a>
+                  </div>
+                <form [formGroup]="form" class="text-left">
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input type="text" class="form-control" placeholder="userName" formControlName="name">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="email" formControlName="email">
+                        <label>Phone no</label>
+                        <input type="Phone" class="form-control" placeholder="Phone" formControlName="phone">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="******" formControlName="password">
+                    </div>
+                    <button class="btn btn-outline-danger btn-block mt-5" (click)="signup()">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
